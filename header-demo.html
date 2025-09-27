@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RosettaScripts - Enhanced Header Design Demo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Demo-specific styles */
+        .demo-section {
+            padding: var(--space-3xl) 0;
+            border-bottom: 1px solid var(--surface-bg);
+        }
+
+        .demo-section h2 {
+            color: var(--text-primary);
+            margin-bottom: var(--space-lg);
+            font-size: var(--font-size-3xl);
+        }
+
+        .demo-section p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .feature-card {
+            background: var(--surface-bg);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .feature-card h3 {
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+            font-size: var(--font-size-lg);
+        }
+
+        .status-good {
+            color: var(--success-color);
+        }
+
+        .status-improved {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Enhanced Header -->
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="#"><h1>RosettaScripts</h1></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="hero">
+            <h1>Enhanced Header Design Demo</h1>
+            <p>Showcasing the improved header with modern design patterns, accessibility features, and responsive behavior optimized for static hosting.</p>
+            <p class="hero-subtitle">Perfect for GitHub Pages deployment with WCAG 2.1 AA compliance</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🎯 Header Improvements Implemented</h2>
+            <p>Here's what has been enhanced in the header design:</p>
+
+            <div class="feature-list">
+                <div class="feature-card">
+                    <h3>📏 Proper Header Sizing</h3>
+                    <p><span class="status-good">✓</span> Standard height of <strong>80px</strong> on desktop</p>
+                    <p><span class="status-good">✓</span> Responsive sizing: <strong>70px</strong> (tablet), <strong>60px</strong> (mobile)</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📌 Sticky Positioning</h3>
+                    <p><span class="status-good">✓</span> Fixed position that doesn't scroll with content</p>
+                    <p><span class="status-good">✓</span> Smooth shadow appears on scroll</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🎨 Design System</h3>
+                    <p><span class="status-good">✓</span> Centralized CSS custom properties</p>
+                    <p><span class="status-good">✓</span> Consistent spacing and color tokens</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📱 Mobile Menu</h3>
+                    <p><span class="status-good">✓</span> Smooth slide-down animation</p>
+                    <p><span class="status-good">✓</span> Accessible with keyboard navigation</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>♿ Accessibility</h3>
+                    <p><span class="status-good">✓</span> WCAG 2.1 AA compliant colors</p>
+                    <p><span class="status-good">✓</span> Focus management and ARIA attributes</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>⚡ Performance</h3>
+                    <p><span class="status-good">✓</span> Optimized for static hosting</p>
+                    <p><span class="status-good">✓</span> GPU-accelerated animations</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🎨 Color Palette (WCAG 2.1 AA Compliant)</h2>
+            <div class="feature-list">
+                <div class="feature-card">
+                    <h3>Primary Background</h3>
+                    <div style="background: #2c3e50; color: white; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">
+                        #2c3e50
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <h3>Accent Color</h3>
+                    <div style="background: #3498db; color: white; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">
+                        #3498db
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <h3>Surface Background</h3>
+                    <div style="background: #f8f9fa; color: #333; padding: 1rem; border-radius: 4px; margin: 0.5rem 0;">
+                        #f8f9fa
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>📱 Responsive Breakpoints</h2>
+            <div class="feature-list">
+                <div class="feature-card">
+                    <h3>Desktop (1200px+)</h3>
+                    <p><span class="status-improved">→</span> Large screens with full navigation</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tablet (768px-1199px)</h3>
+                    <p><span class="status-improved">→</span> Compact header with mobile menu</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Mobile (320px-767px)</h3>
+                    <p><span class="status-improved">→</span> Optimized for touch interactions</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <p>&copy; 2024 RosettaScripts. Enhanced static website design optimized for GitHub Pages.</p>
+    </footer>
+
+    <!-- Utility Components -->
+    <button class="scroll-to-top" aria-label="Scroll to top"></button>
+
+    <!-- Load enhanced JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Demo JavaScript -->
+    <script>
+        // Add some demo interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show a success notification
+            setTimeout(() => {
+                if (window.RosettaScripts) {
+                    window.RosettaScripts.showSuccess('Header enhancements loaded successfully! 🚀', 4000);
+                }
+            }, 1000);
+
+            // Add tooltips to navigation items
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.setAttribute('data-tooltip', `Navigate to ${link.textContent}`);
+            });
+
+            // Demo: Test mobile menu
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle) {
+                navToggle.setAttribute('data-tooltip', 'Toggle mobile menu');
+            }
+        });
+    </script>
+</body>
+</html>

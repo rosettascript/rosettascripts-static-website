@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>PowerShell Automation Guide - RosettaScripts</title>
+    <meta name="title" content="PowerShell Automation Guide - RosettaScripts">
+    <meta name="description" content="Learn advanced PowerShell scripting techniques for Windows administration, Office automation, and system management. Comprehensive guide with real-world examples from MS Scripts project.">
+    <meta name="keywords" content="PowerShell, automation, Windows administration, Office management, scripting, system administration, IT automation">
+    <meta name="author" content="RosettaScripts Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html">
+    <meta property="og:title" content="PowerShell Automation Guide - RosettaScripts">
+    <meta property="og:description" content="Learn advanced PowerShell scripting techniques for Windows administration, Office automation, and system management.">
+    <meta property="og:image" content="https://rosettascript.github.io/rosettascripts-static-website/assets/images/powershell-automation-og.jpg">
+    <meta property="og:site_name" content="RosettaScripts">
+    <meta property="article:published_time" content="2025-01-15T00:00:00+00:00">
+    <meta property="article:author" content="RosettaScripts Team">
+    <meta property="article:section" content="PowerShell">
+    <meta property="article:tag" content="PowerShell">
+    <meta property="article:tag" content="automation">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html">
+    <meta property="twitter:title" content="PowerShell Automation Guide - RosettaScripts">
+    <meta property="twitter:description" content="Learn advanced PowerShell scripting techniques for Windows administration, Office automation, and system management.">
+    <meta property="twitter:image" content="https://rosettascript.github.io/rosettascripts-static-website/assets/images/powershell-automation-twitter.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="../../../assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/icons/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <link rel="stylesheet" href="../../../assets/css/blog.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell Automation Guide",
+        "description": "Learn advanced PowerShell scripting techniques for Windows administration, Office automation, and system management.",
+        "image": "https://rosettascript.github.io/rosettascripts-static-website/assets/images/powershell-automation-og.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "RosettaScripts Team",
+            "url": "https://rosettascript.github.io/rosettascripts-static-website"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "RosettaScripts",
+            "url": "https://rosettascript.github.io/rosettascripts-static-website",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://rosettascript.github.io/rosettascripts-static-website/assets/images/logo.png"
+            }
+        },
+        "datePublished": "2025-01-15T00:00:00+00:00",
+        "dateModified": "2025-01-15T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
+            <div class="nav-brand">
+                <h1><a href="../../../index.html">RosettaScripts</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li><a href="../../../index.html#projects">Projects</a></li>
+                <li><a href="../../../index.html#tools">Tools</a></li>
+                <li><a href="../../../index.html#about">About</a></li>
+                <li><a href="../../pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>PowerShell Automation Guide</h1>
+                <div class="post-meta">
+                    <p>Published on <time datetime="2025-01-15">January 15, 2025</time> by <span class="author">RosettaScripts Team</span></p>
+                    <p class="post-tags">
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Windows Administration</span>
+                        <span class="tag">Office Management</span>
+                    </p>
+                </div>
+            </header>
+            
+            <div class="post-content">
+                <p>PowerShell has become the go-to automation tool for Windows administrators and IT professionals. With its powerful scripting capabilities and deep integration with Windows systems, PowerShell enables you to automate complex tasks that would otherwise require manual intervention. In this comprehensive guide, we'll explore advanced PowerShell techniques for Windows administration, Office automation, and system management.</p>
+                
+                <h2>Why PowerShell for Automation?</h2>
+                <p>PowerShell is more than just a command-line interface—it's a complete automation platform that combines the power of .NET with the flexibility of scripting. Unlike traditional batch files, PowerShell provides:</p>
+                
+                <h3>Key Advantages:</h3>
+                <ul>
+                    <li><strong>Object-oriented:</strong> Works with .NET objects instead of just text</li>
+                    <li><strong>Cross-platform:</strong> PowerShell Core runs on Windows, Linux, and macOS</li>
+                    <li><strong>Rich ecosystem:</strong> Thousands of cmdlets and modules available</li>
+                    <li><strong>Integration:</strong> Deep integration with Windows Management Instrumentation (WMI)</li>
+                    <li><strong>Security:</strong> Built-in security features and execution policies</li>
+                </ul>
+                
+                <h2>Windows Administration Automation</h2>
+                
+                <h3>System Information Gathering</h3>
+                <p>One of the most common automation tasks is gathering system information. Here's how to create a comprehensive system report:</p>
+                
+                <pre><code># Get comprehensive system information
+function Get-SystemReport {
+    $report = @{
+        ComputerName = $env:COMPUTERNAME
+        OS = (Get-WmiObject -Class Win32_OperatingSystem).Caption
+        Architecture = (Get-WmiObject -Class Win32_OperatingSystem).OSArchitecture
+        TotalRAM = [math]::Round((Get-WmiObject -Class Win32_ComputerSystem).TotalPhysicalMemory / 1GB, 2)
+        Processors = (Get-WmiObject -Class Win32_Processor).Name
+        LastBootTime = (Get-WmiObject -Class Win32_OperatingSystem).LastBootUpTime
+    }
+    
+    return $report
+}
+
+# Usage
+$systemInfo = Get-SystemReport
+$systemInfo | Format-List</code></pre>
+                
+                <h3>Service Management</h3>
+                <p>Automate service management tasks with PowerShell:</p>
+                
+                <pre><code># Service management functions
+function Start-ServicesByName {
+    param([string[]]$ServiceNames)
+    
+    foreach ($serviceName in $ServiceNames) {
+        $service = Get-Service -Name $serviceName -ErrorAction SilentlyContinue
+        if ($service) {
+            if ($service.Status -ne 'Running') {
+                Start-Service -Name $serviceName
+                Write-Host "Started service: $serviceName" -ForegroundColor Green
+            } else {
+                Write-Host "Service $serviceName is already running" -ForegroundColor Yellow
+            }
+        } else {
+            Write-Host "Service $serviceName not found" -ForegroundColor Red
+        }
+    }
+}
+
+# Usage
+Start-ServicesByName -ServiceNames @('Spooler', 'BITS', 'Windows Update')</code></pre>
+                
+                <h2>Microsoft Office Automation</h2>
+                
+                <h3>Office Installation Detection</h3>
+                <p>Based on the MS Scripts project, here's how to detect and manage Office installations:</p>
+                
+                <pre><code># Office detection and management
+function Get-OfficeInstallation {
+    $officeVersions = @()
+    
+    # Check for Office 365/2019/2021
+    $office365 = Get-WmiObject -Class Win32_Product | Where-Object { 
+        $_.Name -like "*Microsoft Office*" -and $_.Name -notlike "*Visio*" -and $_.Name -notlike "*Project*"
+    }
+    
+    foreach ($product in $office365) {
+        $officeVersions += @{
+            Name = $product.Name
+            Version = $product.Version
+            InstallDate = $product.InstallDate
+            InstallLocation = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*" | 
+                             Where-Object { $_.DisplayName -eq $product.Name }).InstallLocation
+        }
+    }
+    
+    return $officeVersions
+}
+
+# Usage
+$officeInfo = Get-OfficeInstallation
+$officeInfo | Format-Table -AutoSize</code></pre>
+                
+                <h3>Office Registry Analysis</h3>
+                <p>Analyze Office registry entries for configuration management:</p>
+                
+                <pre><code># Office registry analysis
+function Get-OfficeRegistryInfo {
+    $registryPaths = @(
+        "HKLM:\SOFTWARE\Microsoft\Office",
+        "HKCU:\SOFTWARE\Microsoft\Office"
+    )
+    
+    $officeRegistry = @()
+    
+    foreach ($path in $registryPaths) {
+        if (Test-Path $path) {
+            $versions = Get-ChildItem -Path $path | Where-Object { $_.Name -match "\d+\.\d+" }
+            
+            foreach ($version in $versions) {
+                $officeRegistry += @{
+                    RegistryPath = $version.PSPath
+                    Version = $version.PSChildName
+                    LastWriteTime = $version.LastWriteTime
+                }
+            }
+        }
+    }
+    
+    return $officeRegistry
+}</code></pre>
+                
+                <h2>Advanced PowerShell Techniques</h2>
+                
+                <h3>Error Handling and Logging</h3>
+                <p>Implement robust error handling and logging in your automation scripts:</p>
+                
+                <pre><code># Advanced error handling and logging
+function Write-Log {
+    param(
+        [string]$Message,
+        [string]$Level = "INFO",
+        [string]$LogFile = "automation.log"
+    )
+    
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logEntry = "[$timestamp] [$Level] $Message"
+    
+    # Write to console with color coding
+    switch ($Level) {
+        "ERROR" { Write-Host $logEntry -ForegroundColor Red }
+        "WARNING" { Write-Host $logEntry -ForegroundColor Yellow }
+        "SUCCESS" { Write-Host $logEntry -ForegroundColor Green }
+        default { Write-Host $logEntry -ForegroundColor White }
+    }
+    
+    # Write to log file
+    Add-Content -Path $LogFile -Value $logEntry
+}
+
+# Usage with try-catch
+try {
+    $result = Get-Service -Name "NonExistentService" -ErrorAction Stop
+    Write-Log -Message "Service found: $($result.Name)" -Level "SUCCESS"
+} catch {
+    Write-Log -Message "Service not found: $($_.Exception.Message)" -Level "ERROR"
+}</code></pre>
+                
+                <h3>Parallel Processing</h3>
+                <p>Use PowerShell jobs for parallel processing of multiple tasks:</p>
+                
+                <pre><code># Parallel processing with PowerShell jobs
+function Invoke-ParallelTasks {
+    param([string[]]$ComputerNames)
+    
+    $jobs = @()
+    
+    foreach ($computer in $ComputerNames) {
+        $job = Start-Job -ScriptBlock {
+            param($computerName)
+            
+            # Simulate some work
+            Start-Sleep -Seconds (Get-Random -Minimum 1 -Maximum 5)
+            
+            return @{
+                ComputerName = $computerName
+                Status = "Online"
+                Timestamp = Get-Date
+            }
+        } -ArgumentList $computer
+        
+        $jobs += $job
+    }
+    
+    # Wait for all jobs to complete
+    $results = $jobs | Wait-Job | Receive-Job
+    
+    # Clean up jobs
+    $jobs | Remove-Job
+    
+    return $results
+}
+
+# Usage
+$computers = @("SERVER01", "SERVER02", "SERVER03")
+$results = Invoke-ParallelTasks -ComputerNames $computers
+$results | Format-Table</code></pre>
+                
+                <h2>Security Best Practices</h2>
+                
+                <h3>Execution Policy Management</h3>
+                <p>Properly manage PowerShell execution policies for security:</p>
+                
+                <pre><code># Execution policy management
+function Set-SecureExecutionPolicy {
+    param([string]$Scope = "CurrentUser")
+    
+    # Check current execution policy
+    $currentPolicy = Get-ExecutionPolicy -Scope $Scope
+    Write-Log -Message "Current execution policy for $Scope : $currentPolicy"
+    
+    # Set to RemoteSigned for better security
+    if ($currentPolicy -eq "Unrestricted") {
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope $Scope -Force
+        Write-Log -Message "Execution policy updated to RemoteSigned for $Scope" -Level "SUCCESS"
+    } else {
+        Write-Log -Message "Execution policy is already secure for $Scope" -Level "INFO"
+    }
+}</code></pre>
+                
+                <h3>Code Signing</h3>
+                <p>Sign your PowerShell scripts for enhanced security:</p>
+                
+                <pre><code># Code signing function
+function Sign-PowerShellScript {
+    param(
+        [string]$ScriptPath,
+        [string]$CertificateThumbprint
+    )
+    
+    if (Test-Path $ScriptPath) {
+        try {
+            Set-AuthenticodeSignature -FilePath $ScriptPath -Certificate (Get-ChildItem -Path Cert:\CurrentUser\My -CodeSigningCert | Where-Object { $_.Thumbprint -eq $CertificateThumbprint })
+            Write-Log -Message "Script signed successfully: $ScriptPath" -Level "SUCCESS"
+        } catch {
+            Write-Log -Message "Failed to sign script: $($_.Exception.Message)" -Level "ERROR"
+        }
+    } else {
+        Write-Log -Message "Script not found: $ScriptPath" -Level "ERROR"
+    }
+}</code></pre>
+                
+                <h2>Real-World Automation Examples</h2>
+                
+                <h3>Automated System Maintenance</h3>
+                <p>Create a comprehensive system maintenance script:</p>
+                
+                <pre><code># Automated system maintenance
+function Invoke-SystemMaintenance {
+    param([switch]$WhatIf)
+    
+    $maintenanceTasks = @(
+        @{ Name = "Disk Cleanup"; Script = { Get-ChildItem -Path $env:TEMP -Recurse | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue } },
+        @{ Name = "Event Log Cleanup"; Script = { Get-EventLog -List | ForEach-Object { Clear-EventLog -LogName $_.Log -ErrorAction SilentlyContinue } } },
+        @{ Name = "Windows Update Check"; Script = { Get-WindowsUpdate -AcceptAll -Install -AutoReboot } }
+    )
+    
+    foreach ($task in $maintenanceTasks) {
+        Write-Log -Message "Starting maintenance task: $($task.Name)"
+        
+        if ($WhatIf) {
+            Write-Log -Message "WhatIf: Would execute $($task.Name)" -Level "INFO"
+        } else {
+            try {
+                & $task.Script
+                Write-Log -Message "Completed: $($task.Name)" -Level "SUCCESS"
+            } catch {
+                Write-Log -Message "Failed: $($task.Name) - $($_.Exception.Message)" -Level "ERROR"
+            }
+        }
+    }
+}
+
+# Usage
+Invoke-SystemMaintenance -WhatIf  # Preview what would be done
+# Invoke-SystemMaintenance        # Actually perform maintenance</code></pre>
+                
+                <h2>Conclusion</h2>
+                <p>PowerShell automation is a powerful skill that can significantly improve your efficiency as an IT professional or system administrator. By mastering these techniques—from basic system information gathering to advanced parallel processing and security practices—you can automate complex tasks and reduce manual work.</p>
+                
+                <p>The examples in this guide, inspired by the MS Scripts project, demonstrate real-world automation scenarios that you can adapt for your specific needs. Remember to always test your scripts in a safe environment, implement proper error handling, and follow security best practices.</p>
+                
+                <p>Start with simple automation tasks and gradually build more complex solutions. The key to successful PowerShell automation is understanding the underlying concepts and applying them consistently across your scripts.</p>
+            </div>
+            
+            <footer class="post-footer">
+                <div class="post-navigation">
+                    <a href="../index.html" class="back-to-blog">← Back to All Posts</a>
+                </div>
+                
+                <div class="share-buttons">
+                    <h3>Share this article:</h3>
+                    <a href="https://twitter.com/intent/tweet?url=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html&text=PowerShell%20Automation%20Guide" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html" target="_blank" rel="noopener">Facebook</a>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RosettaScripts. All rights reserved.</p>
+    </footer>
+
+    <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

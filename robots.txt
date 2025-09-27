@@ -1,0 +1,47 @@
+# Robots.txt for RosettaScripts Static Website
+# https://rosettascript.github.io/rosettascripts-static-website
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+Allow: /assets/
+Allow: /content/
+
+# Disallow crawling of draft content
+Disallow: /content/blog/drafts/
+
+# Disallow crawling of temporary or development files
+Disallow: /*.tmp$
+Disallow: /*.log$
+Disallow: /temp/
+Disallow: /tmp/
+
+# Sitemap location
+Sitemap: https://rosettascript.github.io/rosettascripts-static-website/sitemap.xml
+
+# Crawl delay (optional - be respectful to server resources)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots (examples)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
