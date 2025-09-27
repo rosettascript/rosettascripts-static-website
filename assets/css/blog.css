@@ -836,11 +836,16 @@ body header {
     .post-header h1 {
         font-size: 2rem;
         line-height: 1.3;
+        min-height: auto !important;
+        height: auto !important;
     }
     
     .blog-post .post-header,
     .post-header {
         padding: 3rem 2rem;
+        min-height: auto !important;
+        height: auto !important;
+        max-height: none !important;
     }
     
     .post-content {
@@ -885,11 +890,16 @@ body header {
     .post-header h1 {
         font-size: 1.8rem;
         line-height: 1.3;
+        min-height: auto !important;
+        height: auto !important;
     }
     
     .blog-post .post-header,
     .post-header {
         padding: 2.5rem 1.5rem;
+        min-height: auto !important;
+        height: auto !important;
+        max-height: none !important;
     }
     
     .blog-post-preview {
