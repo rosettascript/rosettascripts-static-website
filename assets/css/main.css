@@ -145,11 +145,10 @@ nav {
     justify-content: flex-start;
 }
 
-.nav-brand h1 {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--primary-text);
-    letter-spacing: -0.025em;
+.nav-brand .logo {
+    height: 40px;
+    width: auto;
+    transition: var(--transition-base);
 }
 
 .nav-brand a {
@@ -159,6 +158,10 @@ nav {
 }
 
 .nav-brand a:hover {
+    opacity: 0.9;
+}
+
+.nav-brand a:hover .logo {
     opacity: 0.9;
 }
 
