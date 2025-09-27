@@ -321,13 +321,13 @@ body header {
     position: static !important;
     text-align: center;
     margin-bottom: 3rem;
-    padding: 3rem 3rem;
+    padding: 2rem 3rem;
     min-height: auto;
     width: 100%;
     max-width: 100%;
     display: block;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: visible;
     background: linear-gradient(135deg, var(--accent-color, #3498db) 0%, var(--primary-bg, #2c3e50) 100%);
     color: var(--primary-text, #ffffff);
 }
@@ -825,7 +825,7 @@ body header {
     
     .blog-post .post-header,
     .post-header {
-        padding: 3rem 2rem;
+        padding: 2rem 2rem;
     }
     
     .post-content {
@@ -874,7 +874,7 @@ body header {
     
     .blog-post .post-header,
     .post-header {
-        padding: 2.5rem 1.5rem;
+        padding: 1.5rem 1.5rem;
     }
     
     .blog-post-preview {
