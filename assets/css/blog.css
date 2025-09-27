@@ -1,5 +1,70 @@
 /* Blog-specific styles */
 
+/* FAQ Section Styles */
+.faq-section {
+    margin: var(--space-2xl) 0;
+    padding: var(--space-xl);
+    background-color: var(--surface-bg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--accent-color);
+}
+
+.faq-section h2 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-xl);
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+}
+
+.faq-item {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    background-color: #ffffff;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.faq-item h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive FAQ styles */
+@media (max-width: 768px) {
+    .faq-section {
+        margin: var(--space-lg) 0;
+        padding: var(--space-md);
+    }
+    
+    .faq-section h2 {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-lg);
+    }
+    
+    .faq-item {
+        padding: var(--space-sm);
+        margin-bottom: var(--space-md);
+    }
+    
+    .faq-item h3 {
+        font-size: var(--font-size-base);
+    }
+}
+
 /* Make sure navigation header stays sticky like other pages */
 body header {
     position: sticky !important;
