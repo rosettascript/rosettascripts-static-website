@@ -321,7 +321,7 @@ body header {
     position: static !important;
     text-align: center;
     margin-bottom: 3rem;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     min-height: auto;
     width: 100%;
     max-width: 100%;
@@ -825,7 +825,7 @@ body header {
     
     .blog-post .post-header,
     .post-header {
-        padding: 3rem 0;
+        padding: 3rem 1.5rem;
     }
     
     .post-content {
@@ -874,7 +874,7 @@ body header {
     
     .blog-post .post-header,
     .post-header {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
     
     .blog-post-preview {
