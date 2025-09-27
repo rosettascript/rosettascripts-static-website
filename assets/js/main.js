@@ -246,8 +246,19 @@ class RosettaScriptsApp {
             `Timestamp: ${new Date().toLocaleString()}`
         );
         
+        // Try to redirect to Gmail first, fallback to mailto
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=kimgalicia.real@gmail.com&su=${subject}&body=${body}`;
         const mailtoLink = `mailto:kimgalicia.real@gmail.com?subject=${subject}&body=${body}`;
-        window.open(mailtoLink, '_blank');
+        
+        // Open Gmail in a new tab
+        const gmailWindow = window.open(gmailUrl, '_blank');
+        
+        // If Gmail fails to open (popup blocked), fallback to mailto
+        if (!gmailWindow || gmailWindow.closed || typeof gmailWindow.closed === 'undefined') {
+            setTimeout(() => {
+                window.location.href = mailtoLink;
+            }, 100);
+        }
     }
 
     validateContactForm(form) {
