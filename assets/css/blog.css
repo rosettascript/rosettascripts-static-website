@@ -320,17 +320,16 @@ body header {
 .post-header {
     position: static !important;
     text-align: center;
-    margin-bottom: 4rem;
-    padding: 6rem 3rem;
-    min-height: 400px;
+    margin-bottom: 3rem;
+    padding: 3rem 0;
+    min-height: auto;
     width: 100%;
     max-width: 100%;
     display: block;
     box-sizing: border-box;
     overflow: hidden;
     background: linear-gradient(135deg, var(--accent-color, #3498db) 0%, var(--primary-bg, #2c3e50) 100%);
-    border-radius: 16px;
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+    color: var(--primary-text, #ffffff);
 }
 
 /* Blog header */
@@ -508,10 +507,10 @@ body header {
 /* This rule is now consolidated above - removing duplicate */
 
 .post-header h1 {
-    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-size: 2.5rem;
     color: #ffffff;
-    margin-bottom: 2rem;
-    line-height: 1.1;
+    margin-bottom: 1rem;
+    line-height: 1.3;
     font-weight: 700;
     width: 100%;
     max-width: 100%;
@@ -522,32 +521,30 @@ body header {
     overflow-wrap: break-word;
     hyphens: auto;
     box-sizing: border-box;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .post-header .post-meta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 0;
     width: 100%;
     position: relative;
     z-index: 1;
-    margin-top: 2rem;
-    padding: 0 2rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
 }
 
 .post-header .post-meta p {
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .post-tags {
@@ -562,19 +559,18 @@ body header {
 }
 
 .tag {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.95);
-    padding: 0.6rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: inline-block;
     white-space: nowrap;
     position: relative;
     z-index: 0;
     backdrop-filter: blur(10px);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .post-content {
@@ -823,14 +819,13 @@ body header {
     }
     
     .post-header h1 {
-        font-size: 2.4rem;
-        line-height: 1.1;
+        font-size: 2rem;
+        line-height: 1.3;
     }
     
     .blog-post .post-header,
     .post-header {
-        padding: 4rem 2rem;
-        min-height: 320px;
+        padding: 3rem 0;
     }
     
     .post-content {
@@ -874,13 +869,12 @@ body header {
     
     .post-header h1 {
         font-size: 1.8rem;
-        line-height: 1.2;
+        line-height: 1.3;
     }
     
     .blog-post .post-header,
     .post-header {
-        padding: 3rem 1.5rem;
-        min-height: 250px;
+        padding: 2rem 0;
     }
     
     .blog-post-preview {
