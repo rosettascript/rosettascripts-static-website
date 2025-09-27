@@ -158,10 +158,50 @@
                             <li><strong>Phone:</strong> Reserved for urgent matters and scheduled consultations</li>
                         </ul>
                         
+                        <div class="contact-form-section">
+                            <h2>Send Me a Message</h2>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                            
+                            <form id="contact-form" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <span class="error-message" id="name-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                    <span class="error-message" id="subject-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="6" required></textarea>
+                                    <span class="error-message" id="message-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button type="submit" class="submit-button" id="submit-btn">
+                                        <span class="button-text">Send Message</span>
+                                        <span class="button-loading" style="display: none;">Sending...</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="form-status" id="form-status"></div>
+                            </form>
+                        </div>
+                        
                         <div class="contact-cta">
-                            <h2>Ready to Get Started?</h2>
-                            <p>Whether you're looking to automate your workflow, collaborate on a project, or just want to discuss the latest in development tools, I'm here to help. Don't hesitate to reach out!</p>
-                            <a href="mailto:kimgalicia.real@gmail.com" class="cta-button">Send Email</a>
+                            <h2>Alternative Contact Methods</h2>
+                            <p>Prefer to use your email client? Click the button below to open your default email application.</p>
+                            <a href="mailto:kimgalicia.real@gmail.com?subject=Contact from RosettaScripts Website" class="cta-button">Open Email Client</a>
                         </div>
                     </div>
                 </article>

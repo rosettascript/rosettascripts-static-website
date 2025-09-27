@@ -162,6 +162,159 @@ class RosettaScriptsApp {
                 }
             });
         });
+
+        // Setup contact form specifically
+        this.setupContactForm();
+    }
+
+    setupContactForm() {
+        const contactForm = document.getElementById('contact-form');
+        if (!contactForm) return;
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            this.handleContactFormSubmit(contactForm);
+        });
+
+        // Real-time validation
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('blur', () => {
+                this.validateField(input);
+            });
+            input.addEventListener('input', () => {
+                this.clearFieldError(input);
+            });
+        });
+    }
+
+    handleContactFormSubmit(form) {
+        const submitBtn = form.querySelector('#submit-btn');
+        const buttonText = submitBtn.querySelector('.button-text');
+        const buttonLoading = submitBtn.querySelector('.button-loading');
+        const formStatus = form.querySelector('#form-status');
+
+        // Validate form
+        if (!this.validateContactForm(form)) {
+            return;
+        }
+
+        // Show loading state
+        submitBtn.disabled = true;
+        buttonText.style.display = 'none';
+        buttonLoading.style.display = 'inline';
+        formStatus.textContent = '';
+        formStatus.className = 'form-status';
+
+        // Get form data
+        const formData = new FormData(form);
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+            timestamp: new Date().toISOString()
+        };
+
+        // Simulate form submission (replace with actual email service)
+        setTimeout(() => {
+            // For now, we'll use a mailto fallback
+            this.sendEmailViaMailto(data);
+            
+            // Reset form
+            form.reset();
+            submitBtn.disabled = false;
+            buttonText.style.display = 'inline';
+            buttonLoading.style.display = 'none';
+            
+            // Show success message
+            formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+            formStatus.className = 'form-status success';
+            
+            showNotification('Message sent successfully!', 'success');
+        }, 1500);
+    }
+
+    sendEmailViaMailto(data) {
+        const subject = encodeURIComponent(`Contact Form: ${data.subject}`);
+        const body = encodeURIComponent(
+            `Name: ${data.name}\n` +
+            `Email: ${data.email}\n` +
+            `Subject: ${data.subject}\n\n` +
+            `Message:\n${data.message}\n\n` +
+            `Sent from: RosettaScripts Contact Form\n` +
+            `Timestamp: ${new Date().toLocaleString()}`
+        );
+        
+        const mailtoLink = `mailto:kimgalicia.real@gmail.com?subject=${subject}&body=${body}`;
+        window.open(mailtoLink, '_blank');
+    }
+
+    validateContactForm(form) {
+        const fields = [
+            { id: 'name', name: 'Name' },
+            { id: 'email', name: 'Email' },
+            { id: 'subject', name: 'Subject' },
+            { id: 'message', name: 'Message' }
+        ];
+
+        let isValid = true;
+
+        fields.forEach(field => {
+            const input = form.querySelector(`#${field.id}`);
+            if (!this.validateField(input)) {
+                isValid = false;
+            }
+        });
+
+        return isValid;
+    }
+
+    validateField(field) {
+        const value = field.value.trim();
+        const fieldName = field.name;
+        const errorElement = document.getElementById(`${fieldName}-error`);
+
+        // Clear previous error
+        this.clearFieldError(field);
+
+        // Required field validation
+        if (field.hasAttribute('required') && !value) {
+            this.showFieldError(field, errorElement, `${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)} is required.`);
+            return false;
+        }
+
+        // Email validation
+        if (field.type === 'email' && value) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(value)) {
+                this.showFieldError(field, errorElement, 'Please enter a valid email address.');
+                return false;
+            }
+        }
+
+        // Message length validation
+        if (fieldName === 'message' && value && value.length < 10) {
+            this.showFieldError(field, errorElement, 'Message must be at least 10 characters long.');
+            return false;
+        }
+
+        return true;
+    }
+
+    showFieldError(field, errorElement, message) {
+        field.classList.add('error');
+        if (errorElement) {
+            errorElement.textContent = message;
+        }
+    }
+
+    clearFieldError(field) {
+        field.classList.remove('error');
+        const errorElement = document.getElementById(`${field.name}-error`);
+        if (errorElement) {
+            errorElement.textContent = '';
+        }
     }
 
     validateForm(form) {

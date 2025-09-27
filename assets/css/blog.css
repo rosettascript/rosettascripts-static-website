@@ -65,6 +65,145 @@
     }
 }
 
+/* Contact Form Styles */
+.contact-form-section {
+    margin: var(--space-2xl) 0;
+    padding: var(--space-xl);
+    background-color: var(--surface-bg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--accent-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: var(--space-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 2px solid #e1e5e9;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-base);
+    font-family: inherit;
+    transition: var(--transition-base);
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.error-message {
+    display: block;
+    color: #e74c3c;
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-xs);
+    min-height: 1.2em;
+}
+
+.submit-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-base);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.submit-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.button-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-status {
+    margin-top: var(--space-md);
+    padding: var(--space-sm);
+    border-radius: var(--border-radius-sm);
+    text-align: center;
+    font-weight: 500;
+    min-height: 1.2em;
+}
+
+.form-status.success {
+    background-color: #d5f4e6;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.form-status.error {
+    background-color: #fadbd8;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+.form-status.info {
+    background-color: #d6eaf8;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+/* Responsive form styles */
+@media (max-width: 768px) {
+    .contact-form-section {
+        margin: var(--space-lg) 0;
+        padding: var(--space-md);
+    }
+    
+    .contact-form {
+        max-width: 100%;
+    }
+    
+    .form-group {
+        margin-bottom: var(--space-md);
+    }
+    
+    .submit-button {
+        padding: var(--space-sm) var(--space-lg);
+    }
+}
+
 /* Make sure navigation header stays sticky like other pages */
 body header {
     position: sticky !important;
