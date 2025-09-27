@@ -322,8 +322,9 @@ body header {
     text-align: center;
     margin-bottom: 3rem;
     padding: 3rem 3rem;
-    min-height: auto;
-    height: auto;
+    min-height: auto !important;
+    height: auto !important;
+    max-height: none !important;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -526,6 +527,8 @@ body header {
     hyphens: auto;
     box-sizing: border-box;
     flex-shrink: 0;
+    min-height: auto !important;
+    height: auto !important;
 }
 
 .post-header .post-meta {
@@ -542,6 +545,8 @@ body header {
     max-width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
+    min-height: auto !important;
+    height: auto !important;
 }
 
 .post-header .post-meta p {
