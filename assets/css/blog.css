@@ -534,6 +534,8 @@ body header {
     z-index: 1;
     margin-top: 1rem;
     padding: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .post-header .post-meta p {
@@ -556,6 +558,8 @@ body header {
     width: 100%;
     max-width: 100%;
     overflow-wrap: break-word;
+    box-sizing: border-box;
+    padding: 0 1rem;
 }
 
 .tag {
