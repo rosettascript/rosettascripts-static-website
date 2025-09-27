@@ -100,11 +100,21 @@
     </header>
 
     <main id="main-content">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li aria-current="page">PowerShell Automation Guide</li>
+            </ol>
+        </nav>
+
         <article class="blog-post">
             <header class="post-header">
                 <h1>PowerShell Automation Guide</h1>
                 <div class="post-meta">
                     <p>Published on <time datetime="2025-01-15">January 15, 2025</time> by <span class="author">RosettaScripts Team</span></p>
+                    <p class="reading-time">⏱️ Reading time: ~20 minutes</p>
                     <p class="post-tags">
                         <span class="tag">PowerShell</span>
                         <span class="tag">Automation</span>
@@ -117,7 +127,21 @@
             <div class="post-content">
                 <p>PowerShell has become the go-to automation tool for Windows administrators and IT professionals. With its powerful scripting capabilities and deep integration with Windows systems, PowerShell enables you to automate complex tasks that would otherwise require manual intervention. In this comprehensive guide, we'll explore advanced PowerShell techniques for Windows administration, Office automation, and system management.</p>
                 
-                <h2>Why PowerShell for Automation?</h2>
+                <!-- Table of Contents -->
+                <nav class="table-of-contents" aria-label="Table of Contents">
+                    <h2>📋 Table of Contents</h2>
+                    <ol>
+                        <li><a href="#why-powershell">Why PowerShell for Automation?</a></li>
+                        <li><a href="#windows-administration">Windows Administration Automation</a></li>
+                        <li><a href="#office-automation">Microsoft Office Automation</a></li>
+                        <li><a href="#advanced-techniques">Advanced PowerShell Techniques</a></li>
+                        <li><a href="#security-best-practices">Security Best Practices</a></li>
+                        <li><a href="#real-world-examples">Real-World Automation Examples</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ol>
+                </nav>
+                
+                <h2 id="why-powershell">Why PowerShell for Automation?</h2>
                 <p>PowerShell is more than just a command-line interface—it's a complete automation platform that combines the power of .NET with the flexibility of scripting. Unlike traditional batch files, PowerShell provides:</p>
                 
                 <h3>Key Advantages:</h3>
@@ -129,7 +153,7 @@
                     <li><strong>Security:</strong> Built-in security features and execution policies</li>
                 </ul>
                 
-                <h2>Windows Administration Automation</h2>
+                <h2 id="windows-administration">Windows Administration Automation</h2>
                 
                 <h3>System Information Gathering</h3>
                 <p>One of the most common automation tasks is gathering system information. Here's how to create a comprehensive system report:</p>
@@ -177,7 +201,7 @@ function Start-ServicesByName {
 # Usage
 Start-ServicesByName -ServiceNames @('Spooler', 'BITS', 'Windows Update')</code></pre>
                 
-                <h2>Microsoft Office Automation</h2>
+                <h2 id="office-automation">Microsoft Office Automation</h2>
                 
                 <h3>Office Installation Detection</h3>
                 <p>Based on the MS Scripts project, here's how to detect and manage Office installations:</p>
@@ -237,7 +261,7 @@ function Get-OfficeRegistryInfo {
     return $officeRegistry
 }</code></pre>
                 
-                <h2>Advanced PowerShell Techniques</h2>
+                <h2 id="advanced-techniques">Advanced PowerShell Techniques</h2>
                 
                 <h3>Error Handling and Logging</h3>
                 <p>Implement robust error handling and logging in your automation scripts:</p>
@@ -313,7 +337,7 @@ $computers = @("SERVER01", "SERVER02", "SERVER03")
 $results = Invoke-ParallelTasks -ComputerNames $computers
 $results | Format-Table</code></pre>
                 
-                <h2>Security Best Practices</h2>
+                <h2 id="security-best-practices">Security Best Practices</h2>
                 
                 <h3>Execution Policy Management</h3>
                 <p>Properly manage PowerShell execution policies for security:</p>
@@ -357,7 +381,7 @@ function Sign-PowerShellScript {
     }
 }</code></pre>
                 
-                <h2>Real-World Automation Examples</h2>
+                <h2 id="real-world-examples">Real-World Automation Examples</h2>
                 
                 <h3>Automated System Maintenance</h3>
                 <p>Create a comprehensive system maintenance script:</p>
@@ -392,7 +416,7 @@ function Invoke-SystemMaintenance {
 Invoke-SystemMaintenance -WhatIf  # Preview what would be done
 # Invoke-SystemMaintenance        # Actually perform maintenance</code></pre>
                 
-                <h2>Conclusion</h2>
+                <h2 id="conclusion">Conclusion</h2>
                 <p>PowerShell automation is a powerful skill that can significantly improve your efficiency as an IT professional or system administrator. By mastering these techniques—from basic system information gathering to advanced parallel processing and security practices—you can automate complex tasks and reduce manual work.</p>
                 
                 <p>The examples in this guide, inspired by the MS Scripts project, demonstrate real-world automation scenarios that you can adapt for your specific needs. Remember to always test your scripts in a safe environment, implement proper error handling, and follow security best practices.</p>
@@ -450,6 +474,28 @@ Invoke-SystemMaintenance -WhatIf  # Preview what would be done
                     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html" target="_blank" rel="noopener">Facebook</a>
                 </div>
+
+                <!-- Related Posts Section -->
+                <section class="related-posts">
+                    <h3>📚 Related Articles</h3>
+                    <div class="related-posts-grid">
+                        <article class="related-post">
+                            <h4><a href="ms-scripts-powershell-automation.html">MS Scripts PowerShell Automation</a></h4>
+                            <p>Explore MS Scripts - a comprehensive PowerShell toolkit for Microsoft Office management and Windows administration.</p>
+                            <span class="related-post-date">January 20, 2025</span>
+                        </article>
+                        <article class="related-post">
+                            <h4><a href="pern-setup-automation-tool.html">PERN Setup Automation Tool</a></h4>
+                            <p>Discover the fastest way to create production-ready PERN Stack applications with automation tools.</p>
+                            <span class="related-post-date">January 25, 2025</span>
+                        </article>
+                        <article class="related-post">
+                            <h4><a href="website-indexing-speed-guide.html">Website Indexing Speed Guide</a></h4>
+                            <p>Learn how fast Google indexes websites and discover proven strategies to get your site indexed quickly.</p>
+                            <span class="related-post-date">September 27, 2025</span>
+                        </article>
+                    </div>
+                </section>
             </footer>
         </article>
     </main>

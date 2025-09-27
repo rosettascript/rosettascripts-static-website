@@ -101,11 +101,21 @@
     </header>
 
     <main id="main-content">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li aria-current="page">PERN Setup Automation Tool</li>
+            </ol>
+        </nav>
+
         <article class="blog-post">
             <header class="post-header">
                 <h1>PERN Setup: Cross-Platform Full-Stack Automation Tool</h1>
                 <div class="post-meta">
                     <p>Published on <time datetime="2025-01-25">January 25, 2025</time> by <span class="author">RosettaScripts Team</span></p>
+                    <p class="reading-time">⏱️ Reading time: ~18 minutes</p>
                     <p class="post-tags">
                         <span class="tag">PERN Setup</span>
                         <span class="tag">PERN Stack</span>
@@ -118,7 +128,26 @@
             <div class="post-content">
                 <p>PERN Setup is a powerful, cross-platform boilerplate generator that creates modern PostgreSQL + Express.js + React + Node.js applications in minutes. This automation tool eliminates the tedious setup process, allowing developers to focus on building features rather than configuring environments.</p>
                 
-                <h2>What is PERN Setup?</h2>
+                <!-- Table of Contents -->
+                <nav class="table-of-contents" aria-label="Table of Contents">
+                    <h2>📋 Table of Contents</h2>
+                    <ol>
+                        <li><a href="#what-is-pern-setup">What is PERN Setup?</a></li>
+                        <li><a href="#system-requirements">System Requirements & Compatibility</a></li>
+                        <li><a href="#project-templates">Project Templates</a></li>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#project-structure">Project Structure</a></li>
+                        <li><a href="#development-tools">Development Tools & Features</a></li>
+                        <li><a href="#usage-examples">Usage Examples</a></li>
+                        <li><a href="#environment-variables">Environment Variables</a></li>
+                        <li><a href="#troubleshooting">Troubleshooting</a></li>
+                        <li><a href="#why-choose-pern">Why Choose PERN Setup?</a></li>
+                        <li><a href="#contributing">Contributing</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ol>
+                </nav>
+                
+                <h2 id="what-is-pern-setup">What is PERN Setup?</h2>
                 <p>PERN Setup is designed for full-stack developers, startups, students, and teams building modern web applications with the PERN stack. It provides a lightning-fast way to create production-ready applications with security best practices built-in and modern development tools configured out of the box.</p>
                 
                 <h3>Key Features</h3>
@@ -131,7 +160,7 @@
                     <li><strong>Zero Learning Curve:</strong> Comprehensive docs and examples included</li>
                 </ul>
                 
-                <h2>System Requirements & Compatibility</h2>
+                <h2 id="system-requirements">System Requirements & Compatibility</h2>
                 <p>PERN Setup supports multiple operating systems and shell environments:</p>
                 
                 <h3>Operating System Compatibility</h3>
@@ -176,7 +205,7 @@
                     <li><strong>PostgreSQL</strong> 12+ (optional, can be installed via script)</li>
                 </ul>
                 
-                <h2>Project Templates</h2>
+                <h2 id="project-templates">Project Templates</h2>
                 <p>PERN Setup offers 5 professional templates to suit different development needs:</p>
                 
                 <h3>1. Starter Template</h3>
@@ -218,7 +247,7 @@
                     <li>Flexible configuration</li>
                 </ul>
                 
-                <h2>Getting Started</h2>
+                <h2 id="getting-started">Getting Started</h2>
                 <p>PERN Setup is incredibly easy to use across different platforms:</p>
                 
                 <h3>For Linux/macOS Users</h3>
@@ -240,7 +269,7 @@ cd pern-setup
 # Run the PowerShell script
 .\run.ps1</code></pre>
                 
-                <h2>Project Structure</h2>
+                <h2 id="project-structure">Project Structure</h2>
                 <p>The generated PERN Setup project follows a well-organized structure:</p>
                 
                 <pre><code>pern-setup/
@@ -261,7 +290,7 @@ cd pern-setup
 │   └── microservices/  # Microservices template
 └── docs/              # Documentation</code></pre>
                 
-                <h2>Development Tools & Features</h2>
+                <h2 id="development-tools">Development Tools & Features</h2>
                 <p>PERN Setup includes comprehensive development tools and features:</p>
                 
                 <h3>Development Tools</h3>
@@ -292,7 +321,7 @@ cd pern-setup
                     <li><strong>SSL/TLS certificates</strong></li>
                 </ul>
                 
-                <h2>Usage Examples</h2>
+                <h2 id="usage-examples">Usage Examples</h2>
                 <p>Here are some common usage scenarios for PERN Setup:</p>
                 
                 <h3>Basic Full-Stack Setup</h3>
@@ -310,7 +339,7 @@ export DB_PASSWORD="secure-password"
 # Run with custom settings
 ./run.sh</code></pre>
                 
-                <h2>Environment Variables</h2>
+                <h2 id="environment-variables">Environment Variables</h2>
                 <p>PERN Setup uses environment variables for configuration:</p>
                 
                 <pre><code># Database Configuration
@@ -326,7 +355,7 @@ PORT=5000
 JWT_SECRET=your-secret-key
 CORS_ORIGIN=http://localhost:3000</code></pre>
                 
-                <h2>Troubleshooting</h2>
+                <h2 id="troubleshooting">Troubleshooting</h2>
                 <p>Common issues and their solutions:</p>
                 
                 <h3>Permission Denied (Linux/macOS)</h3>
@@ -353,7 +382,7 @@ brew install node
 # Windows (with Chocolatey)
 choco install nodejs</code></pre>
                 
-                <h2>Why Choose PERN Setup?</h2>
+                <h2 id="why-choose-pern">Why Choose PERN Setup?</h2>
                 <p>PERN Setup stands out from other boilerplates for several reasons:</p>
                 
                 <ul>
@@ -364,7 +393,7 @@ choco install nodejs</code></pre>
                     <li><strong>🛠️ Modern Tools:</strong> Latest TypeScript, testing, and development tools</li>
                 </ul>
                 
-                <h2>Contributing</h2>
+                <h2 id="contributing">Contributing</h2>
                 <p>PERN Setup is an open-source project that welcomes contributions:</p>
                 
                 <ol>
@@ -375,7 +404,7 @@ choco install nodejs</code></pre>
                     <li>Submit a pull request</li>
                 </ol>
                 
-                <h2>Conclusion</h2>
+                <h2 id="conclusion">Conclusion</h2>
                 <p>PERN Setup revolutionizes the way developers create full-stack applications by automating the tedious setup process. With its cross-platform support, comprehensive templates, and built-in security features, it enables developers to focus on building features rather than configuring environments.</p>
                 
                 <p>Whether you're a seasoned full-stack developer or just starting with the PERN stack, PERN Setup provides the tools and structure you need to build production-ready applications quickly and efficiently. The combination of automation, best practices, and modern development tools makes it an essential tool for any developer working with the PERN stack.</p>
@@ -433,6 +462,28 @@ choco install nodejs</code></pre>
                     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/pern-setup-automation-tool.html" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/pern-setup-automation-tool.html" target="_blank" rel="noopener">Facebook</a>
                 </div>
+
+                <!-- Related Posts Section -->
+                <section class="related-posts">
+                    <h3>📚 Related Articles</h3>
+                    <div class="related-posts-grid">
+                        <article class="related-post">
+                            <h4><a href="powershell-automation-guide.html">PowerShell Automation Guide</a></h4>
+                            <p>Learn advanced PowerShell scripting techniques for Windows administration and system management.</p>
+                            <span class="related-post-date">January 15, 2025</span>
+                        </article>
+                        <article class="related-post">
+                            <h4><a href="ms-scripts-powershell-automation.html">MS Scripts PowerShell Automation</a></h4>
+                            <p>Explore MS Scripts - a comprehensive PowerShell toolkit for Microsoft Office management and Windows administration.</p>
+                            <span class="related-post-date">January 20, 2025</span>
+                        </article>
+                        <article class="related-post">
+                            <h4><a href="website-indexing-speed-guide.html">Website Indexing Speed Guide</a></h4>
+                            <p>Learn how fast Google indexes websites and discover proven strategies to get your site indexed quickly.</p>
+                            <span class="related-post-date">September 27, 2025</span>
+                        </article>
+                    </div>
+                </section>
             </footer>
         </article>
     </main>

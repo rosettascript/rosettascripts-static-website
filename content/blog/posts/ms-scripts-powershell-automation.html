@@ -101,11 +101,21 @@
     </header>
 
     <main id="main-content">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li aria-current="page">MS Scripts PowerShell Automation</li>
+            </ol>
+        </nav>
+
         <article class="blog-post">
             <header class="post-header">
                 <h1>MS Scripts: PowerShell Office Management & Windows Administration</h1>
                 <div class="post-meta">
                     <p>Published on <time datetime="2025-01-20">January 20, 2025</time> by <span class="author">RosettaScripts Team</span></p>
+                    <p class="reading-time">⏱️ Reading time: ~15 minutes</p>
                     <p class="post-tags">
                         <span class="tag">MS Scripts</span>
                         <span class="tag">PowerShell</span>
@@ -118,7 +128,24 @@
             <div class="post-content">
                 <p>MS Scripts is a comprehensive PowerShell toolkit designed for IT professionals, system administrators, and developers working with Microsoft Office environments. This project demonstrates legitimate administrative tasks and PowerShell scripting techniques for educational purposes, providing production-ready Office automation tools.</p>
                 
-                <h2>What is MS Scripts?</h2>
+                <!-- Table of Contents -->
+                <nav class="table-of-contents" aria-label="Table of Contents">
+                    <h2>📋 Table of Contents</h2>
+                    <ol>
+                        <li><a href="#what-is-ms-scripts">What is MS Scripts?</a></li>
+                        <li><a href="#project-structure">Project Structure</a></li>
+                        <li><a href="#office-management">Office Management Script</a></li>
+                        <li><a href="#educational-examples">Educational PowerShell Examples</a></li>
+                        <li><a href="#security-best-practices">Security Best Practices</a></li>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#educational-value">Educational Value</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                        <li><a href="#legal-guidelines">Legal and Ethical Guidelines</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ol>
+                </nav>
+                
+                <h2 id="what-is-ms-scripts">What is MS Scripts?</h2>
                 <p>MS Scripts is a collection of PowerShell utilities that focus on Microsoft Office management, Windows administration, and educational development. The project serves as both a practical tool for IT professionals and a learning resource for those wanting to master advanced PowerShell scripting techniques.</p>
                 
                 <h3>Key Features</h3>
@@ -130,7 +157,7 @@
                     <li><strong>Educational Examples:</strong> Safe learning examples with security best practices</li>
                 </ul>
                 
-                <h2>Project Structure</h2>
+                <h2 id="project-structure">Project Structure</h2>
                 <p>The MS Scripts project is organized for maximum usability and educational value:</p>
                 
                 <pre><code>ms-scripts/
@@ -148,7 +175,7 @@
 ├── tests/                                # Test files and test data
 └── assets/                               # Project assets and resources</code></pre>
                 
-                <h2>Office Management Script</h2>
+                <h2 id="office-management">Office Management Script</h2>
                 <p>The core <code>office-activator.ps1</code> script demonstrates legitimate PowerShell techniques for:</p>
                 
                 <h3>Office Status Checking</h3>
@@ -193,7 +220,7 @@ function Get-OfficeRegistryInfo {
     return $officeRegistry
 }</code></pre>
                 
-                <h2>Educational PowerShell Examples</h2>
+                <h2 id="educational-examples">Educational PowerShell Examples</h2>
                 <p>The <code>powershell-educational-examples.ps1</code> script provides safe, educational examples that demonstrate:</p>
                 
                 <h3>Safe Learning Examples</h3>
@@ -216,7 +243,7 @@ cd scripts
 .\powershell-educational-examples.ps1 -Example ElevatedExecution
 .\powershell-educational-examples.ps1 -Example ProcessManagement</code></pre>
                 
-                <h2>Security Best Practices</h2>
+                <h2 id="security-best-practices">Security Best Practices</h2>
                 <p>MS Scripts emphasizes security throughout its design:</p>
                 
                 <h3>Built-in Security Measures</h3>
@@ -228,7 +255,7 @@ cd scripts
                     <li><strong>Administrator Awareness:</strong> Understand the implications of elevated privileges</li>
                 </ul>
                 
-                <h2>Getting Started</h2>
+                <h2 id="getting-started">Getting Started</h2>
                 <p>To get started with MS Scripts:</p>
                 
                 <h3>Installation</h3>
@@ -247,7 +274,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre
                     <li>Administrator privileges (for certain operations)</li>
                 </ul>
                 
-                <h2>Educational Value</h2>
+                <h2 id="educational-value">Educational Value</h2>
                 <p>MS Scripts serves as a comprehensive learning resource for:</p>
                 
                 <ul>
@@ -259,7 +286,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre
                     <li><strong>Error Handling:</strong> Proper exception handling and logging in PowerShell scripts</li>
                 </ul>
                 
-                <h2>Use Cases</h2>
+                <h2 id="use-cases">Use Cases</h2>
                 <p>MS Scripts is suitable for:</p>
                 
                 <ul>
@@ -270,7 +297,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre
                     <li><strong>Developers:</strong> Building Office management solutions</li>
                 </ul>
                 
-                <h2>Legal and Ethical Guidelines</h2>
+                <h2 id="legal-guidelines">Legal and Ethical Guidelines</h2>
                 <p>MS Scripts is provided for educational and development purposes only. All scripts demonstrate legitimate administrative techniques and should only be used in authorized environments.</p>
                 
                 <h3>Acceptable Uses</h3>
@@ -283,7 +310,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre
                     <li>Legitimate system administration</li>
                 </ul>
                 
-                <h2>Conclusion</h2>
+                <h2 id="conclusion">Conclusion</h2>
                 <p>MS Scripts represents a comprehensive approach to PowerShell automation for Microsoft Office environments. By combining practical tools with educational resources, it serves both as a production-ready solution for IT professionals and a learning platform for those developing their PowerShell skills.</p>
                 
                 <p>The project's emphasis on security, documentation, and best practices makes it an excellent resource for anyone working with Office automation or wanting to learn advanced PowerShell techniques. Whether you're managing a large Office deployment or learning PowerShell scripting, MS Scripts provides the tools and knowledge you need.</p>
@@ -341,6 +368,28 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre
                     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/ms-scripts-powershell-automation.html" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/ms-scripts-powershell-automation.html" target="_blank" rel="noopener">Facebook</a>
                 </div>
+
+                <!-- Related Posts Section -->
+                <section class="related-posts">
+                    <h3>📚 Related Articles</h3>
+                    <div class="related-posts-grid">
+                        <article class="related-post">
+                            <h4><a href="powershell-automation-guide.html">PowerShell Automation Guide</a></h4>
+                            <p>Learn advanced PowerShell scripting techniques for Windows administration and system management.</p>
+                            <span class="related-post-date">January 15, 2025</span>
+                        </article>
+                        <article class="related-post">
+                            <h4><a href="pern-setup-automation-tool.html">PERN Setup Automation Tool</a></h4>
+                            <p>Discover the fastest way to create production-ready PERN Stack applications with automation tools.</p>
+                            <span class="related-post-date">January 25, 2025</span>
+                        </article>
+                        <article class="related-post">
+                            <h4><a href="website-indexing-speed-guide.html">Website Indexing Speed Guide</a></h4>
+                            <p>Learn how fast Google indexes websites and discover proven strategies to get your site indexed quickly.</p>
+                            <span class="related-post-date">September 27, 2025</span>
+                        </article>
+                    </div>
+                </section>
             </footer>
         </article>
     </main>
