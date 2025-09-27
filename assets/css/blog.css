@@ -323,9 +323,13 @@ body header {
     margin-bottom: 3rem;
     padding: 3rem 3rem;
     min-height: auto;
+    height: auto;
     width: 100%;
     max-width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     overflow: visible;
     background: linear-gradient(135deg, var(--accent-color, #3498db) 0%, var(--primary-bg, #2c3e50) 100%);
@@ -521,6 +525,7 @@ body header {
     overflow-wrap: break-word;
     hyphens: auto;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .post-header .post-meta {
@@ -536,6 +541,7 @@ body header {
     padding: 0 1rem;
     max-width: 100%;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .post-header .post-meta p {
