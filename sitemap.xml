@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/index.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/website-indexing-speed-guide.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/building-ultimate-pern-stack-setup-tool.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/pern-setup-automation-tool.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/ms-scripts-powershell-automation.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/getting-started-with-static-websites.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://rosettascript.github.io/rosettascripts-static-website/content/pages/contact.html</loc>
-        <lastmod>2025-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/index.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/website-indexing-speed-guide.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/building-ultimate-pern-stack-setup-tool.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/pern-setup-automation-tool.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/ms-scripts-powershell-automation.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/powershell-automation-guide.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/blog/posts/getting-started-with-static-websites.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rosettascript.github.io/rosettascripts-static-website/content/pages/contact.html</loc>
+<lastmod>2025-09-28</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
 </urlset>
